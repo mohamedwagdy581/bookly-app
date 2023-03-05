@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import '../../../../../Core/utils/assets.dart';
 
-class FeaturedListViewItem extends StatelessWidget {
-  const FeaturedListViewItem({super.key});
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 5),
       child: AspectRatio(
         aspectRatio: 2.5 / 4,
         child: Container(

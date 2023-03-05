@@ -1,12 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-//import 'package:go_router/go_router.dart';
+import 'package:go_router/go_router.dart';
 
-//import '../../../../../Core/Utils/app_router.dart';
+import '../../../../../Core/utils/app_router.dart';
 import '../../../../../Core/utils/assets.dart';
-import '../../../../../constants.dart';
-import '../../../../home/presentation/views/home.dart';
 import 'sliding_text.dart';
 
 class SplashViewbody extends StatefulWidget {
@@ -71,13 +67,13 @@ class _SplashViewbodyState extends State<SplashViewbody>
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        Get.to(
-          () => const HomeView(),
-          transition: Transition.fade,
-          duration: kTranstionDuration,
-        );
+        // Get.to(
+        //   () => const HomeView(),
+        //   transition: Transition.fade,
+        //   duration: kTranstionDuration,
+        // );
 
-        //GoRouter.of(context).push(AppRouter.kHomeView);
+        GoRouter.of(context).push(AppRouter.kHomeView);
       },
     );
   }
