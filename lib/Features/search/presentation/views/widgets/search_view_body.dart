@@ -43,11 +43,13 @@ class SearchResultListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemBuilder: (context, index) {
-        return const Padding(
-          padding: EdgeInsets.symmetric(
+        return Padding(
+          padding: const EdgeInsets.symmetric(
             vertical: 10,
           ),
-          child: BestSellerListViewItem(),
+          child: Container(),
+          //TODO: Adding Best Seller List View Items
+          //child: BestSellerListViewItem(),
         );
       },
       itemCount: 10,
